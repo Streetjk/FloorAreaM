@@ -91,7 +91,7 @@ if uploaded_file is not None:
             """
             
             try:
-                model = genai.GenerativeModel('gemini-2.5-flash') # Use the fast model
+                model = genai.GenerativeModel('gemini-3-pro-preview') # Use the fast model
                 response = model.generate_content([prompt, image])
                 
                 # Clean JSON
@@ -124,3 +124,4 @@ if uploaded_file is not None:
             except Exception as e:
                 st.error(f"Something went wrong: {e}")
                 st.write("Tip: Try a photo where the A4 paper is larger/clearer.")
+
