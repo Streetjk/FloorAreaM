@@ -1,6 +1,5 @@
 streamlit
-google-generative-ai>=0.8.0
+google-generativeai
 pillow
 numpy
-
 opencv-python-headless
