@@ -47,7 +47,7 @@ if uploaded_file is not None:
             
             try:
                 # Call Gemini 1.5 Pro (Better at vision tasks)
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel('gemini-2.5-flash')
                 response = model.generate_content([prompt, image])
                 
                 # Extract the text
@@ -67,3 +67,4 @@ if uploaded_file is not None:
                 st.error(f"Error: {e}")
 
                 st.write("Tip: Make sure the A4 paper is clearly visible and not too far away.")
+
